@@ -1,13 +1,13 @@
 import { IxContentHeader, IxButton, IxPagination } from '@siemens/ix-react';
-import { useTimesStore } from '../stores/times.store';
+import { useTimesStore } from '../../stores/times.store';
 import { useShallow } from 'zustand/shallow';
-import TimeList from './TimeList';
-import Toolbar from './Toolbar';
+import List from '../list/List';
+import Toolbar from '../toolbar';
 import { useEffect } from 'react';
 
 interface Props {}
 
-export const Times = ({}: Props) => {
+export const Page = ({}: Props) => {
   const { load } = useTimesStore(useShallow((state) => ({ load: state.load })));
 
   useEffect(() => {
@@ -29,11 +29,11 @@ export const Times = ({}: Props) => {
       </IxContentHeader>
       <div className="flex flex-col gap-2 h-full">
         <Toolbar />
-        <TimeList />
+        <List />
         <IxPagination count={20} />
       </div>
     </>
   );
 };
 
-export default Times;
+export default Page;

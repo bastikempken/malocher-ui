@@ -1,19 +1,13 @@
-import { IxTypography, IxIconButton, IxTooltip } from '@siemens/ix-react';
-
 interface Props {}
 
-export const TimeListHeader = ({}: Props) => {
+export const ListHeader = ({}: Props) => {
   return (
     <div className="border-b-1 p-2 flex items-center">
       <div className="w-1/5">
-        <IxTypography>
-          <b>Day</b>
-        </IxTypography>
+        <b>Day</b>
       </div>
       <div className="w-1/5">
-        <IxTypography>
-          <b>Start</b>
-        </IxTypography>
+        <b>Start</b>
       </div>
       <div className="w-1/5">
         <b>Stop</b>
@@ -28,4 +22,4 @@ export const TimeListHeader = ({}: Props) => {
   );
 };
 
-export default TimeListHeader;
+export default ListHeader;

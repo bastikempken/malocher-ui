@@ -1,11 +1,11 @@
-import { Time } from '../types/time.model';
+import { Time } from '../../types/time.model';
 import { IxTypography, IxIconButton, IxTooltip } from '@siemens/ix-react';
 
 interface Props {
   time: Time;
 }
 
-export const TimeListItem = ({ time }: Props) => {
+export const ListItem = ({ time }: Props) => {
   return (
     <div className="border-b-1 p-2 flex items-center hover:bg-[var(--theme-color-secondary--hover)]">
       <div className="w-1/4">
@@ -44,4 +44,4 @@ export const TimeListItem = ({ time }: Props) => {
   );
 };
 
-export default TimeListItem;
+export default ListItem;
