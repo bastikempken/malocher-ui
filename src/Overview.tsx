@@ -1,4 +1,4 @@
-import { IxContent, IxContentHeader } from '@siemens/ix-react';
+import { IxContentHeader } from '@siemens/ix-react';
 
 interface Props {}
 

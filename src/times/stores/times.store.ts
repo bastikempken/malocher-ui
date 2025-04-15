@@ -22,7 +22,7 @@ const defaultStore: TimesStore = {
 };
 
 export const useTimesStore = create<TimesStore & TimesAction>()(
-  devtools((set, get) => ({
+  devtools((set) => ({
     ...defaultStore,
     load: async () => {
       try {
